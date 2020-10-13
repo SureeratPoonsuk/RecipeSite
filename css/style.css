@@ -1,0 +1,193 @@
+/*Deta är en kommentar*/
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+
+p{
+	font-size:18px;
+}
+
+
+/*Header style*/
+header {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #f4f4f4;
+
+}
+
+#logo{
+	width: 60px
+	height:auto;
+
+}
+
+.main-nav{ 
+margin-top: 20px;
+
+}
+
+.main-nav> a {
+	color: #000;
+	text-decoration: none; /*tar bort understreckt*/
+	text-transform: uppercase;
+	margin-right: 24px /*mellan ord */
+
+}
+
+.main-nav> a:hover {
+	color: #e74c3c;
+	text-decoration: none;
+
+}
+
+/*hero style.hero contrainer i index (div)*/
+.hero-container{
+	width: 100%;
+	height:600px;
+	background-image: url('../img/hero-img.jpg');
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: top center;  /*var texter ska vara ex väster eller högre*/
+}
+
+.hero-tittle{
+	font-size: 72px;
+	color:#e74c3c;
+}
+
+
+/*paragraf=p vid ingress*/ 
+.ingress{
+ margin-top:40px; /*texten flyttar ner*/
+ font-size: 32px;
+
+
+}
+/*Card style*/
+.card-container{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.card{
+	max-width:600px;  /* margin är utsidan och paddad är insida*/
+	border-radius: 10px;    
+	overflow:hidden;
+	box-shadow:2px 2px 10px 0px  rgba(0,0,0,0.5);  /*rgba röd grön blå och alfal*/
+	padding-bottom: 32px; /*luften i botten (text)*/
+}
+.card > img {
+	width: 100%; /*för att bilder ska bli större*/
+	margin-bottom: 32px;
+
+}
+.card > h2 {
+	font-size: 46px; /*kladdkaka orden blir störe*/
+	margin-bottom: 20px;
+}
+
+.card > p {
+	font-size: 24px;    /*text blir större paragraf från index*/
+	font-weight:300;
+	width: 70%;
+	margin-bottom: 20px;
+}
+
+.card > a {
+	background-color: #2ecc71; 
+	padding:12px;
+	width:90%;
+	max-width:100px;
+	color:#fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.card > a:hover {
+	background-color: #c0392b; /*hover byta färg*/
+
+}
+
+/*kladdkaka.html style*/
+
+.recipe-container{
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+
+.recipe-container > h2 {
+	font-size: 32px;
+}
+.recipe-container > label { 
+	text-transform: uppercase;
+	font-size: 16px;
+
+}
+
+select {
+	width: 100px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	background-color:#e74c3c;
+}
+
+select:focus{
+	outline: none;
+	background-color: #ccc;
+
+}
+select:hover {
+	background-color: #ccc;
+
+}
+
+table {
+	margin-top: 32px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+
+table > thead > tr > th {
+	text-transform: uppercase;
+}
+
+
+table > tbody {
+	background-color: #ccc;
+
+}
+h3{
+	font-size: 32px;  /* så här gör du text*/
+	margin-top: 60px;
+	margin-bottom: 32px;
+}
+
+ol { 
+	list-style-position: inside; 
+	margin-top: 20px;
+}
+
+ol > li.list-group-item {
+	display: list-item;
+	padding-top: 20px;
+	padding-bottom: 20px;	
+}
+
+ol > li.list-group-item:hover { 
+  cursor: pointer;
+ }
+
+ ol > li.list-group-item.step-done {
+ 		text-decoration: line-through;
+ 		background-color: #ccc;
+
+
+ }

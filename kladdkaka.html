@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kladdkaka</title>
+	<meta charset="UTF-8" /> 
+
+
+	<!--detta är style filen-->
+	<link href="./css/style.css" rel="stylesheet" type="text/css"/>
+	<!--detta är typavsnitt-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+ <header>
+		<img id="logo"src="./img/logo.png"/>
+		<nav class="main-nav">
+			<a href="index.html">Hem<a/>
+				<a href="kontakt.html">kontakt oss<a/>
+					<a href="http://digitaldreams.cc/" target="_blank">Digital dream</a>
+
+
+
+
+		</nav>
+</header>
+	<div class="intro-container"> <!--div=divers-->
+
+<img class ="hero-img" src="./img/kladdkaka-intro-img.jpg"/>  <!-- lägga bilder-->
+
+	<h1 class="hero-title">kladdkaka</h1>
+	<p class="ingress">Receptet till den perfekta kladdkaka som gör att drömma.</p> <!--texter-->
+
+
+	</div>
+	<div class="receipe-container container">
+
+
+
+	<h2>Ingredienser</h2>
+	<label>Antal</label>	 <!--drop down-->
+	
+	<select id="qtySelect" onchange="countAmount()">
+		 <option value="1">1</option>
+	       <option value ="2">2</option>
+	        <option value="3">3</option>
+	         <option value="4">4</option>
+	          <option value="5">5</option>
+	</select>
+
+	<table class="table">
+		<thead class="thead-dark">  <!-- lägga till class på java -->
+
+			<tr>
+				<th> Mängde</th>
+				<th>Enhet</th>
+				<th>Råverk</th>
+
+			</tr>
+
+
+		</thead>
+		<tbody>
+			<tr>
+				<td class="amount" data-amount="100">100</td>
+				<td>
+				g</td>
+
+				<td>smör</td>
+
+
+			</tr>
+			<tr> 
+				<td class="amount" data-amount="2.5">2.5 </td>
+				<td>
+				dl</td>
+
+				<td>strösocker</td>
+
+			</tr>
+
+			<tr>
+				<td class="amount" data-amount="2">2</td>
+				<td> st</td>
+
+				<td>Ägg</td>
+
+			</tr>
+
+			<tr>
+				<td class="amount" data-amount="1">1</td>
+				<td> dl</td>
+
+				<td>Vetemjöl</td>
+
+			</tr>
+
+			<tr>
+				<td class="amount" data-amount="3">3</td>
+				<td> msk</td>
+				<td>Kakao</td>
+			</tr>
+
+			<tr>
+				<td class="amount" data-amount="1">1</td>
+				<td>tsk</td>
+				<td> Vanijsocker</td>
+
+			</tr>
+
+			</tbody>
+
+
+
+</table> 
+
+<h3> så här gör du</h3>
+<p> följa stegen nedan för att få fram den perfekta kladdkakan.</p>
+
+<ol  class="list-group"> <!-- lägga till class till alla ol -->
+	<li class="list-group-item" onclick="stepDone(this)">sätt ugnen på 175 grader.</li>
+	<li class="list-group-item" onclick="stepDone(this)">Smält smöret i en kastrull.</li>
+	<li class="list-group-item" onclick="stepDone(this)">Rör ner socker och ägg, blanda väl. Rör ner övriga ingredienser så att allt väl blandat.</li>
+	<li class="list-group-item" onclick="stepDone(this)">Häll smeten i en smprd och bröad form med löstagbar kant , ca24 cm i diameter.</li>
+	<li class="list-group-item" onclick="stepDone(this)">Grädda mitt i ugnen ca15 min.</li>
+	<li class="list-group-item" onclick="stepDone(this)">Servera med grädda eller glass och frukt.</li>
+
+</ol>
+
+</div>
+ <script type="text/javascript" src="./js/script.js"></script>
+
+	<img />
+
+	
+</body>
+
+
+</html>
